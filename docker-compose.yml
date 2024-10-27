@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_container
+    environment:
+      MYSQL_ROOT_PASSWORD: ""  # Sin contraseña para el usuario root
+      MYSQL_DATABASE: bdprueba   # Nombre de la base de datos
+      MYSQL_USER: root           # Usuario de MySQL (root)
+      MYSQL_PASSWORD: ""         # Sin contraseña para el usuario root
+    volumes:
+      - ./bdprueba.sql:/docker-entrypoint-initdb.d/bdprueba.sql  # Montar el archivo SQL
+    ports:
+      - "3306:3306"
+
+  tomcat:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
