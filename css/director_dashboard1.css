@@ -1,0 +1,252 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-message {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.welcome-message h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #5e9c8a;
+}
+
+.welcome-message p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    border: 3px solid #5e9c8a;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #5e9c8a;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+.logout-form {
+    margin-top: auto;
+}
+
+.logout-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.logout-form button:hover {
+    background-color: #c0392b;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+    color: #2b2b2b;
+    border-bottom: 2px solid #5e9c8a;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0;
+}
+
+input, select, textarea, button {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #5e9c8a;
+    box-shadow: 0 0 5px rgba(94, 156, 138, 0.5);
+}
+
+button {
+    background-color: #5e9c8a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3f7a6b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+th {
+    background-color: #2b2b2b;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #ecf0f1;
+}
+
+a {
+    color: #5e9c8a;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3f7a6b;
+    text-decoration: underline;
+}
+
+.success-message {
+    color: #27ae60;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #dff0d8;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error-message {
+    color: #c0392b;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2dede;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#calendario-formatos .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #5e9c8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#calendario-formatos .btn:hover {
+    background-color: #3f7a6b;
+}
+
+#crud-informacion-alumno table {
+    margin-bottom: 30px;
+}
+
+#buscar-proyecto form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#buscar-proyecto input[type="text"] {
+    flex-grow: 1;
+}
+
+#buscar-proyecto button {
+    flex-shrink: 0;
+    background-color: #5e9c8a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buscar-proyecto button:hover {
+    background-color: #3f7a6b;
+}
