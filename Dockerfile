@@ -1,5 +1,5 @@
 # Utilizar la imagen base de Tomcat
-FROM tomcat:8.5-jdk22
+FROM tomcat:8.5-jdk8
 
 # Establecer el directorio de trabajo en Tomcat
 WORKDIR /usr/local/tomcat/webapps/
